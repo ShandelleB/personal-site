@@ -10,30 +10,21 @@ body {
 	font-family: 'Lato', sans-serif; 
 }
 
-h2,
-a {
+h2 {
+	border-bottom: 3px #fff dashed;
+	display: inline-block;
+}
+
+h2, a {
 	color: #093a58;
 }
 
-h2 {
-	border-bottom: 3px #fff dashed;
-	display: inline;
-	padding: 10px 10px 10px 10px;
-}
-
-p {
-	text-align: left;
-	line-height: 30px;
-}
-
-a {
-	text-decoration: none;
+li {
+	list-style: none;
 }
 
 img {
 	box-shadow: 1px 5px 5px 1px #093a58;
-	border-radius: 40px 10px;
-	overflow: hidden;
 }
 
 #icons {
@@ -41,201 +32,50 @@ img {
 	width: 40px;
 	border-radius: 50%;
 	margin: 1em;
+	box-shadow: 1px 5px 5px 1px #093a58;
 }
+
+/* ================================= 
+  Navigation Styles
+==================================== */
+
+ul.topnav {
+	background-color: #A9A9A9;
+}
+
+ul.topnav li a {
+	color: #093a58;
+}
+
+/* ================================= 
+  Layout Styles
+==================================== */
 
 .banner {
 	text-align: center;
 	color: #fff;
 	background: linear-gradient(#227b74, transparent 90%),
 		linear-gradient(0deg, #3acec2, transparent);
-	padding-top: 8em;
-	padding-bottom: 8em;
-	padding-left: 5em;
-	padding-right: 5em;
+	padding-top: 2em;
+	padding-bottom: 2em;
+	padding-left: 2em;
+	padding-right: 2em;
 	overflow: auto;
 }
 
-.container {
-	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-  	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-  	display: -ms-flexbox;
-	display: -webkit-flex;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	flex-grow: 1;
+.banner a {
+	color: #093a58;
+	text-decoration: none;
 }
 
-.secondary {
-	height: 500px;
-	width: 500px;
+footer {
+	background-color: #A9A9A9;
 }
 
-.resume p {
-	text-align: center;
-	line-height: 0;
-}
-
-.main-footer {
-	background: #d9e4ea;
-	padding: 2em 0;
-	margin-top: 30px;
-	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-  	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-  	display: -ms-flexbox;
-	display: -webkit-flex;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	flex-grow: 1;
-}
-
-.main-footer h4 {
-	font-size: .95em;
+footer h4 {
+	font-size: 1.5em;
 	color: #093a58;
 	border-bottom: 3px #3acec2 dashed;
+	display: inline-block;
 	text-transform: uppercase;
-	margin-left: 100px;
-}
-
-/* ---- Navigation ---- */
-
-.name {
-	font-size: 1.25em;
-	margin: 0;
-	text-decoration: none;
-}
-
-.main-nav {
-	margin-top: 5px;
-}
-
-.name a,
-.main-nav a {
-	display: block;
-	text-align: center;
-	padding: 15px 15px;
-	text-decoration: none;
-}
-	
-.main-nav a {
-	font-size: .95em;
-	color: #3acec2;
-	text-transform: uppercase;
-}
-
-.main-nav a:hover {
-	color: #093a58;
-}
-
-/* ---- Layout Containers ---- */
-
-.main-header {
-	padding-top: .5em;
-	padding-bottom: .5em;
-}
-
-
-/* ================================= 
-  Media Queries
-==================================== */
-
-@media (min-width: 320px) and (max-width: 500px) {
-	#front {
-		height: 250px;
-		width: 200px;
-	}
-
-	#about {
-		height: 200px;
-		width: 150px;
-	}
-
-	#back {
-		height: 200px;
-		width: 250px;
-	}
-
-	.container {
-		display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-  		display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-  		display: -ms-flexbox;
-		display: -webkit-flex;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		flex-grow: 1;
-	}
-
-	.secondary {
-		margin-top: 20px;
-		height: 400px;
-		width: 250px;
-	}
-
-	.main-footer {
-		display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-  		display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-  		display: -ms-flexbox; 
-		display: -webkit-flex;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		flex-grow: 1;
-	}
-
-	.main-footer h4{
-		margin-left: 0px;
-	}
-}
-
-@media (min-width: 769px) {
-
-	body {
-		padding-top: 68px;
-	}
-
-	.main-header {
-		position: fixed;
-		background: #fff;
-		box-shadow: 0 1px 4px rgba(0,0,0,.4);
-		width: 100%;
-		top: 0;
-		z-index: 1000;
-	}
-
-	.name, {
-		float: left;
-	}
-
-	.main-nav {
-		float: right;
-	}
-
-	.main-nav li {
-		display: inline-block;
-		margin-left: 15px;
-	}
-}
-
-@media (min-width: 768px) and (max-width: 1200px) {
-	.container {
-		display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-  		display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-  		display: -ms-flexbox; 
-		display: -webkit-flex;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		flex-grow: 1;
-	}
-
-	.secondary {
-		margin-top: 20px;
-	}
-
-	.main-footer h4 {
-		margin-left: 50px;
-	}
-
 }
