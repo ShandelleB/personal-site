@@ -3,50 +3,67 @@
 
 <head>
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="css/main.css">
   	<link rel="stylesheet" href="css/normalize.css">
+  	<link rel="stylesheet" type="text/css" href="beauter.min.css">
+  	<link rel="stylesheet" href="css/main.css">
   	<link href='https://fonts.googleapis.com/css?family=Lato:400,900' rel='stylesheet' type='text/css'>
 	<title>Shandelle Brown</title>
 </head>
 
-<body class="page-wrap">
-	<header class="main-header">
-		<div class="container">
-			<h1 class="name"><a href="index.html">Shandelle Brown | Front End Developer</a></h1>
-			<ul class="main-nav">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="resume.html">Resume</a></li>
-				<li><a href="contact.html">Social</a></li>
-			</ul>
-		</div>
-	</header><!--/.main-header--> 
+<body>
+	<ul class="topnav" id="myTopnav">
+  		<li><a href="index.html" class="brand">Shandelle Brown <span class=" _hide-mobile _hide-phablet">| Front End Developer</span></a></li>
+  		<li><a href="index.html">Home</a></li>
+		<li><a href="about.html">About</a></li>
+		<li><a href="resume.html">Resume</a></li>
+  		<li><a href="contact.html">Social</a></li>
+  		<li class="-icon">
+    		<a href="javascript:void(0);" onclick="myFunction()">☰</a>
+  		</li>
 
+	</ul>
+
+	<script>
+		/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the -icon */
+		function myFunction() {
+		    var x = document.getElementById("myTopnav");
+		    if (x.className === "topnav") {
+		        x.className += " responsive";
+		    } else {
+		        x.className = "topnav";
+		    }
+		}
+	</script>
 	<div class="banner">
-		<div class="container">
-			<div class="primary col">
-				<img id="front" src="images/front1.jpg" alt="Shandelle Brown">
-			</div>
+		<div class="container" style="min-height:250px">
+			<div class="row">
+				<div class="col m6">
+					<img class="-round" src="images/front1.jpg" alt="Shandelle Brown">
+				</div>
 
-			<div class="secondary col">
-				<h2>Welcome! ☺</h2>
-				<p>So glad you&rsquo;ve decided to stop by!  Feel free to look around and enjoy your stay at my website.  There is complimentary coffee if you bring it yourself. Don&rsquo;t forget to pour me a cup while you&rsquo;re at it! It will have to do until we get to the future and can set up our own caffeine IVs. Until then, enjoy my site!</p>
+				<div class="col m6">
+					<h2>Welcome! ☺</h2>
+					<p>So glad you&rsquo;ve decided to stop by!  Feel free to look around and enjoy your stay at my website.  There is complimentary coffee if you bring it yourself. Don&rsquo;t forget to pour me a cup while you&rsquo;re at it! It will have to do until we get to the future and can set up our own caffeine IVs. Until then, enjoy my site!</p>
+				</div>
 			</div>
 		</div>
 	</div>
 
-	<footer class="main-footer">
-		<h4>2 Weenie Dogs</h4></br>
-		<h4>10 Countries Visited</h4></br>
-		<h4>3 Cups of Coffee per Day</h4></br>
+	<footer>
+		<div class="container jumbo">
+			<div class="row">
+				<div class="col m4">
+					<h4>2 Weenie Dogs</h4></br>
+				</div>
+				<div class="col m4">
+					<h4>3 Cups of Coffee per Day</h4></br>
+				</div>
+				<div class="col m4">
+					<h4>10 Countries Visited</h4></br>
+				</div>
+			</div>
+		</div>
 	</footer>
-
-
-
-
-
-
-
 
 </body>
 </html>
