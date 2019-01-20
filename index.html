@@ -39,7 +39,7 @@
 		<div class="container" style="min-height:250px">
 			<div class="row">
 				<div class="col m6">
-					<img class="-round" src="images/front1.jpg" alt="Shandelle Brown">
+					<img class="-round" src="images/front2.jpg" alt="Shandelle Brown">
 				</div>
 
 				<div class="col m6">
@@ -53,18 +53,45 @@
 	<footer>
 		<div class="container jumbo">
 			<div class="row">
-				<div class="col m4">
-					<h4>2 Weenie Dogs</h4></br>
+				<div class="col m4" id="2">
+					<h4><span class="count">2</span> Weenie Dogs</h4></br>
 				</div>
-				<div class="col m4">
-					<h4>3 Cups of Coffee per Day</h4></br>
+				<div class="col m4" id="3">
+					<h4><span class="count">3</span> Cups of Coffee per Day</h4></br>
 				</div>
-				<div class="col m4">
-					<h4>10 Countries Visited</h4></br>
+				<div class="col m4" id="13">
+					<h4><span class="count">13</span> Countries Visited</h4></br>
 				</div>
 			</div>
 		</div>
 	</footer>
+
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+
+		  var counters = document.getElementsByClassName("count");
+		  var countersQuantity = counters.length;
+		  var counter = [];
+
+		  for (i = 0; i < countersQuantity; i++) {
+		    counter[i] = parseInt(counters[i].innerHTML);
+		  }
+
+		  var count = function(start, value, id) {
+		    var localStart = start;
+		    setInterval(function() {
+		      if (localStart < value) {
+		        localStart++;
+		        counters[id].innerHTML = localStart;
+		      }
+		    }, 150);
+		  }
+
+		  for (x = 0; x < countersQuantity; x++) {
+		    count(0, counter[x], x);
+		  }
+		});
+	</script>
 
 </body>
 </html>
