@@ -27,12 +27,10 @@ img {
 	box-shadow: 1px 5px 5px 1px #093a58;
 }
 
-#icons {
+.icons {
 	height: 40px;
 	width: 40px;
-	border-radius: 50%;
 	margin: 1em;
-	box-shadow: 1px 5px 5px 1px #093a58;
 }
 
 /* ================================= 
